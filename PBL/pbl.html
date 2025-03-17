@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recycle & Earn</title>
+    <title>PolyConnect</title>
     <link rel="stylesheet" href="./pbl.css">
 </head>
 <body>
@@ -13,6 +13,9 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#schedule">Schedule Pickup</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#vendor">Vendor Portal</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -46,9 +49,29 @@
             </div>
         </section>
 
+        <section id="schedule" class="schedule">
+            <h2>Schedule a Pickup</h2>
+            <form id="pickup-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Your Address" required>
+                <input type="date" required>
+                <button type="submit">Schedule</button>
+            </form>
+        </section>
+
+        <section id="rewards" class="rewards">
+            <h2>Rewards Program</h2>
+            <p>Earn points for each pickup and redeem exciting rewards!</p>
+        </section>
+
+        <section id="vendor" class="vendor">
+            <h2>Vendor Portal</h2>
+            <p>Vendors can log in to manage pickup requests and track collections.</p>
+            <button id="vendor-login">Vendor Login</button>
+        </section>
+
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <p>Have questions or need assistance? Reach out to us:</p>
             <form id="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
@@ -59,7 +82,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Recycle & Earn. All Rights Reserved.</p>
+        <p>&copy; 2025 PolyConnect. All Rights Reserved.</p>
     </footer>
 
     <script src="./pbl.js"></script>

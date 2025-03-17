@@ -46,9 +46,9 @@ body {
     text-align: center;
     padding: 5rem 2rem;
     background-image: url('./shutterstock_1555474487-scaled.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .home h2 {
@@ -71,39 +71,35 @@ body {
     background: #005bb5;
 }
 
+/* How It Works Section */
 .how-it-works {
     padding: 3rem 2rem;
     background: #eaf2f8;
-}
-
-.how-it-works h2 {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .steps {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .step {
     text-align: center;
-    width: 250px; 
-    height: 300px;
-    font-size: 1.2rem; 
-    background: #f7f7f7; 
-    border-radius: 15px; 
-    padding: 1.5rem; 
-    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; 
+    width: 250px;
+    font-size: 1.2rem;
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .step:hover {
-    transform: scale(1.05); 
-    background: #ffffff; 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .step img {
@@ -113,7 +109,70 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Schedule Pickup Section */
+.schedule {
+    padding: 3rem 2rem;
+    background: #d6eaf8;
+    text-align: center;
+}
 
+.schedule form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.schedule form input,
+.schedule form button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.schedule form button {
+    background: #0072ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.schedule form button:hover {
+    background: #005bb5;
+}
+
+/* Rewards Section */
+.rewards {
+    padding: 3rem 2rem;
+    background: #f0f8ff;
+    text-align: center;
+}
+
+/* Vendor Portal */
+.vendor {
+    padding: 3rem 2rem;
+    background: #eaf2f8;
+    text-align: center;
+}
+
+.vendor button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background: #0072ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.vendor button:hover {
+    background: #005bb5;
+}
+
+/* Contact Section */
 .contact {
     padding: 3rem 2rem;
     background: #d6eaf8;
@@ -129,19 +188,17 @@ body {
 }
 
 .contact form input,
-.contact form textarea {
+.contact form textarea,
+.contact form button {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .contact form button {
-    padding: 0.75rem;
     background: #0072ff;
     color: #fff;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
